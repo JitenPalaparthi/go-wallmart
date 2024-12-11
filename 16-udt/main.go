@@ -6,11 +6,8 @@ import (
 )
 
 func main() {
-
 	var mymap1 mymap
-
 	mymap1 = make(mymap)
-
 	mymap1["1"] = "bangalore"
 	mymap1["2"] = "hyd"
 	mymap1["3"] = "trivandrum"
@@ -70,6 +67,8 @@ func main() {
 		return i1 - i2
 	}
 	fmt.Println(f2.Sq(10, 20))
+
+	myfunc(mul).Sq(10, 20)
 }
 
 type mymap map[string]any
@@ -111,4 +110,8 @@ type myfunc func(int, int) int
 
 func (m myfunc) Sq(a, b int) int {
 	return m(a, b) * m(a, b)
+}
+
+func mul(a, b int) int {
+	return a * b
 }
