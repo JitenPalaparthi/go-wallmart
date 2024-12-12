@@ -42,3 +42,12 @@ go tool compile -o demo.o main.go
 ```
 go tool link -o demo demo.o
 ```
+
+keywords:
+
+break    default      func       interface    select
+case     defer        go         map          struct
+chan     else         goto       package      switch
+const    fallthrough  if         range        type
+continue for          import     return       var
+
